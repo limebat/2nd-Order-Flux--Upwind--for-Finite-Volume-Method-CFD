@@ -1,0 +1,5 @@
+If you would like the full generative code and mesh, please go to the following GitHub link for everything included
+
+https://github.com/limebat/2nd-Order-Flux--Upwind--for-Finite-Volume-Method-CFD/tree/main
+
+Import code and then run for results.

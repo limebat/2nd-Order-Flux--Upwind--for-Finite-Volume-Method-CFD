@@ -22,12 +22,12 @@ def generate_uniform_triangular_mesh(radius, target_num_points):
     elements : numpy.ndarray
         Array of triangular element node connections
     """
-    # Estimate the triangle side length based on the target number of points
+    #  ESTIMATE
     area_of_circle = np.pi * (radius ** 2)
     approximate_triangle_area = area_of_circle / target_num_points
     triangle_side_length = np.sqrt((4 * approximate_triangle_area) / np.sqrt(3))
     
-    # Hexagonal close packing grid generation
+    # Hexagonal grid generation
     coordinates = []
     hex_width = triangle_side_length
     hex_height = triangle_side_length * math.sqrt(3) / 2
